@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # 推送到默认分支时运行。
   push:
-    branches: ['main']
+    branches: ["main"]
   # 运行工作流的请求有 pull_request 和 workflow_dispatch 事件类型
   pull_request:
     types: [opened, synchronize]
@@ -20,7 +20,7 @@ permissions:
 
 # 允许一个并发的部署
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
       - name: Install pnpm
-        run: npm install -g pnpm@8.15.6
+        run: npm install -g pnpm
       - name: Install dependencies
         run: pnpm install
       - name: Build
@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
-          path: './.vitepress/dist'
+          path: "./.vitepress/dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
