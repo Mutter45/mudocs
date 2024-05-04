@@ -4,16 +4,16 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Mutter Blog",
   description: "Mutter job and study",
+  lang: "zh_CN",
   head: [
-    ["link", { rel: "icon", type: "image/x-icon", href: "/blog/avatar.jpg" }],
+    ["link", { rel: "icon", type: "image/x-icon", href: "/blog/avatar.png" }],
   ],
   srcDir: "src", // 指定源目录为src
   base: "/blog/", // 设置站点的基础路径
   metaChunk: true, // 将页面元数据提取到单独的 JavaScript 块中
   lastUpdated: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    logo: "/avatar.jpg",
+    logo: "/avatar.png",
     siteTitle: "Mutter",
     nav: [
       {

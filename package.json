@@ -1,17 +1,18 @@
 {
   "name": "blog",
   "type": "module",
+  "packageManager": "pnpm@9.0.4",
+  "description": "个人知识专栏",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "devDependencies": {
     "sass": "^1.76.0",
     "vitepress": "^1.1.4"
   },
   "engines": {
-    "node": ">=20.x",
-    "pnpm": ">=9.x"
+    "node": ">=20.x"
   }
 }

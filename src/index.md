@@ -7,22 +7,22 @@ hero:
   text: "Mutter job and study"
   tagline: My great project tagline
   image:
-    src: /avatar.jpg
+    src: /avatar.png
     alt: VitePress
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 专栏介绍
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: Github
       link: /api-examples
 
 features:
-  - title: Feature A
+  - title: 效率工具
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: 游戏合集
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 学习之路
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
