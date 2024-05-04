@@ -8,7 +8,7 @@
     - [ ] Object使用总结
 
  - [Typescript](https://mutter45.github.io/blog/typescript)
-    - [x] Typescript常用辅助类型
+    - [ ] Typescript常用辅助类型
 
  - [Vue](https://mutter45.github.io/blog/vue)
     - [x] Vue简介
