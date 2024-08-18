@@ -4,13 +4,13 @@ import viteConfig from './viteConfig'
 // https://vitepress.dev/reference/site-config
 export default async ({ mode }: { mode: 'production' | 'development' }) => {
   return defineConfig({
-    title: 'Mutter Blog',
+    title: 'Mutter Docs',
     description: 'Mutter job and study',
     lang: 'zh_CN',
     head: [
-      ['link', { rel: 'icon', type: 'image/x-icon', href: mode === 'production' ? '/blog/avatar.png' : '/avatar.png' }],
+      ['link', { rel: 'icon', type: 'image/x-icon', href: mode === 'production' ? '/mudocs/avatar.png' : '/avatar.png' }],
     ],
-    base: mode === 'production' ? '/blog/' : '/',
+    base: mode === 'production' ? '/mudocs/' : '/',
     srcDir: 'src', // 指定源目录为src
     metaChunk: true, // 将页面元数据提取到单独的 JavaScript 块中
     lastUpdated: true,

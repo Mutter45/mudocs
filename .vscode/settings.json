@@ -70,6 +70,7 @@
     "commitlint",
     "esno",
     "iconify",
+    "mudocs",
     "octicon",
     "unocss",
     "unplugin",
