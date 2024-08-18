@@ -15,7 +15,7 @@ hero:
       link: /markdown-examples
     - theme: alt
       text: Github
-      link: /api-examples
+      link: https://github.com/Mutter45
 
 features:
   - title: 效率工具

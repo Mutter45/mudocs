@@ -1,38 +1,33 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import pluginVue from "eslint-plugin-vue";
-import markdown from "eslint-plugin-markdown";
+import antfu from '@antfu/eslint-config'
 
-export default [
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...pluginVue.configs["flat/essential"],
+export default antfu(
   {
-    plugins: {
-      markdown,
-    },
+    formatters: true,
+    ignores: [
+      '**/types',
+      '**/cache',
+      '**/dist',
+      '**/.temp',
+      '**/*.svg',
+      '**/*.md',
+    ],
   },
   {
-    files: ["**/*.md"],
-    processor: "markdown/markdown",
-  },
-  {
-    // 1. Target ```js code blocks in .md files.
-    files: ["**/*.md/*.js"],
     rules: {
-      // 2. Disable other rules.
-      "no-console": "off",
-      "import/no-unresolved": "off",
+      'vue/no-deprecated-functional-template': 'off',
+      'vue/one-component-per-file': 'off',
+      'vue/no-template-shadow': 'off',
+      'vue/require-prop-types': 'off',
+      'spaced-comment': ['error', 'always', { exceptions: ['#__PURE__'] }],
+      'ts/ban-types': 'off',
+      'node/no-callback-literal': 'off',
+      'import/namespace': 'off',
+      'import/default': 'off',
+      'import/no-named-as-default': 'off',
+      'import/no-named-as-default-member': 'off',
+      'node/prefer-global/process': 'off',
+      'ts/unified-signatures': 'off',
+      'ts/no-dynamic-delete': 'off',
     },
   },
-  {
-    languageOptions: { globals: { ...globals.browser, ...globals.node } },
-    rules: {
-      "vue/multi-word-component-names": ["off"], // Vue 3 不再强制要求组件名称是多个单词
-    },
-  },
-  {
-    ignores: [".vitepress/dist/*", ".vitepress/cache/*"],
-  },
-];
+)

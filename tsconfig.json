@@ -1,27 +1,22 @@
 {
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "esnext",
-      "lib": ["ESNext", "DOM", "DOM.Iterable"],
-      "moduleResolution": "Bundler",
-      "esModuleInterop": true,
-      "strict": true,
-      "strictNullChecks": true,
-      "strictFunctionTypes": true,
-      "declaration": true,
-      "resolveJsonModule": true,
-      "rootDir": ".",
-      "baseUrl": ".",
-      "jsx": "preserve",
-      "skipLibCheck": true,
-      "skipDefaultLibCheck": true,
-      "noUnusedLocals": true
-    },
-    "include": [
-      "src",
-      ".vitepress/*.vue",
-      ".vitepress/*.ts"
-    ],
-    "exclude": ["**/node_modules/**", "**/dist/**"]
-  }
-  
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "rootDir": ".",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", ".vitepress/*.vue", ".vitepress/*.ts"],
+  "exclude": ["node_modules", "**/dist/**"]
+}
